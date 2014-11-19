@@ -18,7 +18,7 @@ body {background-color:lightblue;}
 
 #page-wrapper {
   background-color:white;
-  width:768px;
+  max-width:960px;
 }
 
 #content {
@@ -44,7 +44,21 @@ nav ul{
   list-style-type:none;
 }
 
-/*-----Left-Sided Nav Menu-----*/
+
+/*-----Ad Styling-----*/
+.wide-skyscaper-ad {
+  width:160px;
+  height:600px;
+  background-color:silver;
+}
+
+
+/*----Three-Column Fixed Layout-----*/
+
+#page-wrapper {
+  max-width:960px;
+}
+
 nav{
   float:left;
   width:175px;
@@ -53,7 +67,13 @@ nav{
 
 #content{
   float:left;
-  width:593px;
+  width:625px;
+  box-sizing:border-box;
+}
+
+#sidebar{
+  float:left;
+  width:160px;
   box-sizing:border-box;
 }
 
