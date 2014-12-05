@@ -12,7 +12,7 @@
 /*----- Basic Styling -----*/
 
 body {
-background-color:lightblue;
+  background-color:lightblue;
 }
 
 #page-wrapper {
@@ -49,22 +49,27 @@ footer {
   background-color:silver;
 }
 
-/*----Three-Column Fixed Layout-----*/
+/*----One-Column Mobile Layout----*/
+#fluid-columns, nav, #content, #sidebar {
+  width:100%;
+}
 
+@media all and (min-width: 525px) {
+/*----Two-Column Fluid Layout-----*/
 #page-wrapper {
-  max-width:960px;
+  max-width:100%;
 }
 
 nav {
   float:left;
-  width:175px;
+  width:21.875%;
   -moz-box-sizing:border-box;
   box-sizing:border-box; 
 }
 
 #content{
   float:left;
-  width:625px;
+  width:78.125%;
   -moz-box-sizing:border-box;
   box-sizing:border-box;
 }
@@ -76,4 +81,13 @@ nav {
   box-sizing:border-box;
 }
 
+@media all and (min-wdith:960px) {
+/*----Three-Column Fixed Layout----*/
+  #page-wrapper {
+  width:960px;
+}
+#fluid-columns {
+  width:800px;
+}
+}
 
