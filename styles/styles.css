@@ -10,33 +10,27 @@
 */
 
 /*----- Basic Styling -----*/
-footer {
-  clear:both declaration;
+
+body {
+background-color:lightblue;
 }
 
-body {background-color:lightblue;}
-
 #page-wrapper {
-  background-color:white;
   max-width:960px;
+  margin: 0 auto;
+  background-color:white;
 }
 
 #content {
-  background-color:#f7f2da;
-  padding-top:0em;
-  padding-right:1em;
-  padding-bottom:0em;
-  padding-left:1em;
+  padding: 0 1em;
   margin-bottom:10px;
+  background-color:#f7f2da;
 }
 
 nav{
-  background-color:gray;
-  padding-top:0em;
-  padding-right:0em;
-  padding-bottom:0em;
-  padding-left:0em;
-  margin:0px;
+  padding: 0;
+  margin: 0;
+  background-color: gray;
 }
 
 nav ul{
@@ -44,6 +38,9 @@ nav ul{
   list-style-type:none;
 }
 
+footer {
+  clear:both declaration;
+}
 
 /*-----Ad Styling-----*/
 .wide-skyscaper-ad {
@@ -52,28 +49,30 @@ nav ul{
   background-color:silver;
 }
 
-
 /*----Three-Column Fixed Layout-----*/
 
 #page-wrapper {
   max-width:960px;
 }
 
-nav{
+nav {
   float:left;
   width:175px;
+  -moz-box-sizing:border-box;
   box-sizing:border-box; 
 }
 
 #content{
   float:left;
   width:625px;
+  -moz-box-sizing:border-box;
   box-sizing:border-box;
 }
 
-#sidebar{
+#sidebar {
   float:left;
   width:160px;
+  -moz-box-sizing:border-box;
   box-sizing:border-box;
 }
 
